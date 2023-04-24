@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <title>JavaS</title>
+</head>
+<body>
+    <ul id="mainboxID" class="mainbox">
+        <li class="list lists1">lorem 1</li>
+        <li class="list lists2">lorem 2</li>
+        <li class="list lists3">lorem 3</li>
+    </ul>
+
+
+
+    <div id="first" class="block block-1"></div>
+    <div id="second" class="block block-2"></div>
+
+
+
+    <script>
+        let ul = document.getElementById('mainboxID')
+
+        console.log(ul);
+
+        // let li = document.querySelector('.lists3')
+
+        // let li = document.createElement('li')
+
+        // li.innerHTML = 'New Lorem'
+
+        // ul.append(li)
+
+        let bool = ul.classList.contains('mainbox')
+        console.log(bool);
+
+        let first = document.getElementById('first')
+        let second = document.getElementById('second')
+
+        first.onclick = color
+        
+        first.addEventListener('click', border)
+
+        second.onclick = color
+
+        second.addEventListener('click', border)
+
+        function color(){
+            this.classList.toggle('green')
+        }
+        function border(){
+            this.style.borderRadius = '100px'
+        }
+    </script>
+</body>
+</html>
